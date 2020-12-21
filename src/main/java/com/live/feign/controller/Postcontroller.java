@@ -17,7 +17,7 @@ public class Postcontroller {
 
     private PostClient postClient;
 
-    @GetMapping(value = "/{id}")
+    @GetMapping
     public List<PostDTO> getAllPosts() {
         return postClient.getAllPosts();
     }
